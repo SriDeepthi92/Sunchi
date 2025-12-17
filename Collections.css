@@ -1,0 +1,167 @@
+/* Collections Page Styling */
+/* Make header row align perfectly */
+.u-header .u-sheet-1{
+  display: flex !important;
+  align-items: center !important;   /* vertical align */
+  justify-content: space-between !important; /* logo left, menu right */
+}
+
+/* Ensure nav itself is centered */
+.u-header .u-menu-1,
+.u-header .u-nav-container{
+  align-self: center !important;
+}
+
+/* Remove extra vertical offsets from the links */
+.u-header .u-nav-1 > li > a{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1 !important;
+}
+
+/* Optional: reduce logo extra spacing */
+.u-header .u-logo{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.u-section-1 {
+  padding: 60px 20px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Filter Container */
+.u-filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid #52796f;
+  background-color: white;
+  color: #52796f;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #52796f;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(82, 121, 111, 0.3);
+}
+
+.filter-btn.active {
+  background-color: #52796f;
+  color: white;
+}
+
+/* Product Grid */
+.u-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #c67e66;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Social Media Icons Styling */
+.social-icons--navy {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.social-icons--navy a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f6b083;   /* coral */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.social-icons--navy a:hover {
+  background: #e09a6f;   /* slightly darker coral */
+  transform: translateY(-2px);
+}

@@ -1,0 +1,56 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 400px;
+}
+
+/* Make header row align perfectly */
+.u-header .u-sheet-1{
+  display: flex !important;
+  align-items: center !important;   /* vertical align */
+  justify-content: space-between !important; /* logo left, menu right */
+}
+
+/* Ensure nav itself is centered */
+.u-header .u-menu-1,
+.u-header .u-nav-container{
+  align-self: center !important;
+}
+
+/* Remove extra vertical offsets from the links */
+.u-header .u-nav-1 > li > a{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1 !important;
+}
+
+/* Optional: reduce logo extra spacing */
+.u-header .u-logo{
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Social Media Icons Styling */
+.social-icons--navy {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.social-icons--navy a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f6b083;   /* coral */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.social-icons--navy a:hover {
+  background: #e09a6f;   /* slightly darker coral */
+  transform: translateY(-2px);
+}
